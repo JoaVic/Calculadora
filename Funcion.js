@@ -18,10 +18,10 @@ function dividir(a , b){
 }
 
 //Funcion principal
-function calculadora(){
+function calcular(){
     let operacion = document.getElementById("operacion").value;
-    let num1 = parseFloat(document.getElementById("numero1").value);
-    let num2 = parseFloat(document.getElementById("numero2").value);
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
     let resultado;
 
     switch(operacion){
@@ -45,8 +45,8 @@ function calculadora(){
 
 //Reiniciar valores
 function reiniciar(){
-    document.getElementById("numero1").value = "";
-    document.getElementById("numero2").value = "";
+    document.getElementById("num1").value = "";
+    document.getElementById("num2").value = "";
     document.getElementById("resultado").innerText = "";
     document.getElementById("operacion").value = "1";
 }
